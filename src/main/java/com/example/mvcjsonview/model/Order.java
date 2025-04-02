@@ -11,11 +11,10 @@ public class Order {
     @Column(name = "id", nullable = false)
     private Long id;
 
-    @NotNull
+    @NotNull(message = "Product is required")
     @Column(name = "product")
     private String product;
 
-    @NotNull
     @Column(name = "amount", nullable = false)
     private double amount;
 
